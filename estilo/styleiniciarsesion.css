@@ -13,14 +13,14 @@ body {
 }
 
 .btn-volver {
-    background-color: transparent; /* Fondo transparente para no saturar */
-    color: #3afff8; /* Letra cian */
-    border: 2px solid #3afff8; /* Borde cian */
+    background-color: transparent;
+    color: #3afff8;
+    border: 2px solid #3afff8;
     padding: 8px 15px;
     text-decoration: none; 
-    border-radius: 5px; 
-    transition: 0.3s; /* Hace que el cambio de color sea suave */
+    border-radius: 5px;
 }
+
 /* Agrupa los inputs en una columna y los centra */
 .caja-login {
     display: flex;

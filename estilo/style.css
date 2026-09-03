@@ -50,6 +50,8 @@ header {
     color: #3afff8;
     border: 2px solid #3afff8;
     padding: 8px 15px;
+    cursor: pointer;
+    text-decoration: nono;
 }
 
 
