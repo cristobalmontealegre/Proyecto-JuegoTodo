@@ -1,0 +1,101 @@
+    /* --- ESTILOS GENERALES --- */
+body {
+    background-color: #121212; /* Fondo oscuro tipo gamer */
+    color: #3afff8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- ENCABEZADO (HEADER) --- */
+header {
+    display: flex   ;
+    align-items: center;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #1e1e1e;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #3afff8  ;
+    text-transform: uppercase;
+    border: 2px solid #3afff8   ;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.navegacion a {
+    color: #3afff8;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.usuario {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    text-decoration: none;
+}
+
+.btn-sesion {
+    background: transparent;
+    color: #3afff8;
+    border: 2px solid #3afff8;
+    padding: 8px 15px;
+}
+
+
+/* --- TÍTULOS DE SECCIÓN --- */
+.titulo-seccion {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+    letter-spacing: 2px;
+    color: #3afff8;
+}
+
+/* --- novedades --- */
+.anuncios {
+    display: flex;
+    border: 4px solid #3afff8;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.anuncios img {
+    width: 19.9%; 
+    height: 100%;
+    object-fit: cover; /* Esto hace que la imagen rellene el espacio sin deformarse */
+    border-right: 3px solid #000000; /* Una pequeña línea separadora negra entre cada imagen */
+}
+
+
+/* --- CATALOGO --- */
+.catalogo-container {
+    border: 2px solid #3afff8;
+    padding: 10px;
+    background-color: #3afff800;
+    margin: auto;   
+    border-radius: 20px; 
+    width: 70%;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.catalogo img {
+    width: 95%;   
+}
+

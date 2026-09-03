@@ -1,0 +1,24 @@
+body {
+    background-color: #121212; /* Fondo oscuro tipo gamer */
+    color: #3afff8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.titulo-basico {
+    text-align: center;
+    color: #3afff8;
+    margin-bottom: 40px; /* Le da un buen espacio antes de que empiecen los juegos */
+    letter-spacing: 2px; /* Separa un poquito las letras para que se vea más ordenado */
+}
+
+.btn-volver {
+    display: inline-block;
+    background-color: transparent; /* Fondo transparente para no saturar */
+    color: #3afff8; /* Letra cian */
+    border: 2px solid #3afff8; /* Borde cian */
+    padding: 8px 15px;
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: 0.3s; /* Hace que el cambio de color sea suave */
+}

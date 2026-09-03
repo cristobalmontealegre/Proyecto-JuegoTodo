@@ -1,0 +1,53 @@
+body {
+    background-color: #121212; /* Fondo oscuro tipo gamer */
+    color: #3afff8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.titulo-basico {
+    text-align: center;
+    color: #3afff8;
+    margin-bottom: 40px; /* Le da un buen espacio antes de que empiecen los juegos */
+    letter-spacing: 2px; /* Separa un poquito las letras para que se vea más ordenado */
+}
+
+.btn-volver {
+    background-color: transparent; /* Fondo transparente para no saturar */
+    color: #3afff8; /* Letra cian */
+    border: 2px solid #3afff8; /* Borde cian */
+    padding: 8px 15px;
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: 0.3s; /* Hace que el cambio de color sea suave */
+}
+/* Agrupa los inputs en una columna y los centra */
+.caja-login {
+    display: flex;
+    flex-direction: column; /* Apila las cosas hacia abajo en lugar de hacia los lados */
+    align-items: center;
+    gap: 15px; /* Espacio entre los cuadros */
+    margin-top: 30px;
+}
+
+/* Diseño de los cuadritos donde escribes */
+.input-basico {
+    padding: 10px;
+    width: 250px;
+    background-color: #222; /* Fondo gris muy oscuro */
+    color: #fff; /* Letra blanca cuando escribes */
+    border: 1px solid #3afff8; /* Borde cian simple */
+    border-radius: 5px;
+}
+
+/* El botón de entrar */
+.btn-ingresar {
+    background-color: #3afff8;
+    color: #000;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
