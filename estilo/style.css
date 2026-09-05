@@ -51,7 +51,7 @@ header {
     border: 2px solid #3afff8;
     padding: 8px 15px;
     cursor: pointer;
-    text-decoration: nono;
+    text-decoration: none;
 }
 
 
@@ -84,9 +84,9 @@ header {
 
 /* --- CATALOGO --- */
 .catalogo-container {
-    border: 2px solid #3afff8;
-    padding: 10px;
-    background-color: #3afff800;
+    border: 3px solid #3afff8;
+    padding: 15px 10px;
+    background-color: #000000;
     margin: auto;   
     border-radius: 20px; 
     width: 70%;
@@ -97,7 +97,66 @@ header {
     justify-content: space-around;
 }
 
+.catalogo a {
+    display: flex;
+    justify-content: center;
+}
+
 .catalogo img {
     width: 95%;   
 }
 
+/* =========================================
+   DISEÑO PARA CELULARES
+   ========================================= */
+@media (max-width: 768px) {
+    
+    /* 1. Apilamos el menú superior hacia abajo */
+    header {
+        flex-direction: column;
+        gap: 15px; /* Espacio entre el logo, los enlaces y el botón */
+        padding: 15px;
+    }
+
+    /* Centramos el contenedor del botón de sesión */
+    .usuario {
+        justify-content: center; 
+    }
+
+    .anuncios {
+        display: flex;
+        flex-wrap: nowrap !important; /* Mantiene las 5 fotos en una sola línea */
+        height: 100px !important; /* OBLIGAMOS a la caja y al borde cian a medir solo 150px de alto */
+    }
+
+    .anuncios img {
+        width: 20%; /* Como son 5 fotos, cada una ocupa el 20% del ancho */
+        height: 100% !important; /* La foto ocupa exactamente los 150px de la caja */
+        object-fit: cover;
+    }
+
+    .catalogo-container{
+        padding: 15px 1px;
+    /* Estirar hacia arriba y abajo */
+    }
+
+    .catalogo {
+    flex-wrap: wrap; /* Permite que las fotos bajen a la siguiente línea para no estar apretadas */
+    justify-content: center;
+    gap: 15px;
+    }
+
+    .catalogo a {
+        width: 40%; /* Al ocupar casi la mitad de la pantalla, se verán más grandes (2 por fila) */
+        display: flex;
+        justify-content: center;
+
+    }
+    
+
+    .catalogo img {
+        width: 100%; /* Rellena el espacio que le dimos arriba */
+    }
+
+
+}
