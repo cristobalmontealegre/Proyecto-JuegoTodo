@@ -1,13 +1,13 @@
 
 body {
-    background-color: #121212; 
+    background-color: #121212;
     color: #3afff8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
-/* ENCABEZADO */
+/* ENCABEZADO  */
 header {
     display: flex   ;
     align-items: center;
@@ -44,7 +44,7 @@ header {
 .usuario {
     flex: 1;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ header {
     text-decoration: none;
     border-radius: 10px;
 
-    
+
 }
 .titulo-seccion{
     text-align: center;
@@ -67,9 +67,9 @@ header {
 
 .contacto-caja {
     max-width: 500px;
-    margin: 40px auto; 
+    margin: 40px auto;
     text-align: center;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 .contacto-caja h2 {
@@ -85,24 +85,24 @@ header {
 .contacto-caja form {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
 }
 
 .contacto-caja input,
 .contacto-caja textarea {
     padding: 15px;
-    background-color: #1a1a1a; 
-    border: none; 
+    background-color: #1a1a1a;
+    border: none;
     border-radius: 5px;
     color: #ffffff;
     font-family: inherit;
     font-size: 15px;
-    resize: none; 
+    resize: none;
 }
 
 .contacto-caja input:focus,
 .contacto-caja textarea:focus {
-    outline: 1px solid #3afff8; 
+    outline: 1px solid #3afff8;
 }
 
 .contacto-caja button {
@@ -113,7 +113,7 @@ header {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    
+
 }
 
 @media (max-width: 768px) {
@@ -122,7 +122,7 @@ header {
     }
     header {
         flex-direction: column;
-        gap: 15px; 
+        gap: 15px;
         padding: 15px;
     }
 
