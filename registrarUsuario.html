@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRAR USUARIO</title>
+    <link rel="stylesheet" href="estilo/styleRegistrarUsuario.css">
+</head>
+<body>
+
+    <a href="index.html" class="btn-volver">← Volver</a>
+
+    <h1 class="titulo-basico">REGISTRO DE USUARIO</h1>
+
+    <form class="caja-login" onsubmit="registrarUsuario(event)">
+        <input type="text" id="reg-usuario" class="input" placeholder="Nombre de Usuario" required>
+        <input type="email" id="reg-email" class="input" placeholder="Correo electrónico" required>
+        <input type="password" id="reg-password" class="input" placeholder="Contraseña" required>
+        <input type="password" id="reg-confirm-password" class="input" placeholder="Confirmar Contraseña" required> 
+
+        <button type="submit" class="btn-ingresar">REGISTRAR</button>
+    </form>
+
+    <script src="script/registro.js"></script>
+    
+</body>
+</html>
