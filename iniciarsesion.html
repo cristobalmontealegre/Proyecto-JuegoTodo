@@ -11,10 +11,12 @@
         <a href="index.html" class="btn-volver">← Volver</a>
     </div>
     <h1 class="titulo-basico">INICIO DE SESION</h1>
-    <div class="caja-login">
-    <input type="text" placeholder="Nombre de usuario" class="input-basico">
-    <input type="password" placeholder="Contraseña" class="input-basico">
+    <form class="caja-login" onsubmit="iniciarSesion(event)">
+        <input type="text" id="login-usuario" placeholder="Nombre de usuario o Correo" class="input-basico" required>
+        <input type="password" id="login-password" placeholder="Contraseña" class="input-basico" required>
+        <button type="submit" class="btn-ingresar">ENTRAR</button>
+    </form>
 
-    <a href="index.html" class="btn-ingresar">Entrar</a>
-</div>
+    <script src="script/login.js"></script>
 </body>
+</html>
