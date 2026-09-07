@@ -1,0 +1,125 @@
+
+body {
+    background-color: #121212; 
+    color: #3afff8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/*ENCABEZADO*/
+header {
+    display: flex   ;
+    align-items: center;
+    border: 2px solid #3afff8   ;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #1e1e1e00;
+    border-radius: 10px;
+
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #3afff8  ;
+    text-transform: uppercase;
+    border: 2px solid #3afff8   ;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.navegacion a {
+    color: #3afff8;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.usuario {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    text-decoration: none;
+}
+
+.btn-sesion {
+    background: transparent;
+    color: #3afff8;
+    border: 2px solid #3afff8;
+    padding: 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 40px;
+}
+
+.info-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto; 
+}
+
+.info-caja {
+    background-color: #121212; 
+    border: 1px solid #3afff8; 
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+.info-caja h2 {
+    color: #3afff8;
+    font-size: 28px;
+    text-align: center; 
+}
+
+.info-caja p {
+    color: #d1d1d1; 
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    text-align: center; 
+}
+
+.info-caja h3 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.info-caja ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-caja ul li {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.info-caja ul li b {
+    color: #3afff8; 
+}
+
+@media (max-width: 768px) {
+    .info-caja {
+        padding: 25px 20px;
+    }
+    header {
+        flex-direction: column;
+        gap: 15px; 
+        padding: 15px;
+    }
+
+}

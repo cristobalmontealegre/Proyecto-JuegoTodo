@@ -1,0 +1,167 @@
+body {
+    background-color: #121212; 
+    color: #3afff8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.logopag img{
+    width: 300px; 
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ENCABEZADO*/
+header {
+    display: flex   ;
+    align-items: center;
+    border: 2px solid #3afff8;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #0f0f0f00;
+    border-radius: 10px;
+
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #3afff8  ;
+    text-transform: uppercase;
+    border: 2px solid #3afff8   ;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
+.navegacion a {
+    color: #3afff8;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.usuario {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    text-decoration: none;
+}
+
+.btn-sesion {
+    background: transparent;
+    color: #3afff8;
+    border: 2px solid #3afff8;
+    padding: 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+
+/* TÍTULOS DE SECCIÓN */
+.titulo-seccion {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+    letter-spacing: 2px;
+    color: #3afff8;
+}
+
+/* novedades */
+.anuncios {
+    display: flex;
+    border: 4px solid #3afff8;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.anuncios img {
+    width: 19.9%; 
+    height: 100%;
+    object-fit: cover; 
+    border-right: 3px solid #000000; 
+}
+
+/* CATALOGO */
+.catalogo-container {
+    border: 3px solid #3afff8;
+    padding: 15px 10px;
+    background-color: #000000;
+    margin: auto;   
+    border-radius: 20px; 
+    width: 70%;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.catalogo a {
+    display: flex;
+    justify-content: center;
+}
+
+.catalogo img {
+    width: 95%;   
+}
+
+/*DISEÑO PARA CELULARES*/
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        gap: 15px; 
+        padding: 15px;
+    }
+
+    .usuario {
+        justify-content: center; 
+    }
+
+    .anuncios {
+        display: flex;
+        flex-wrap: nowrap !important; 
+        height: 100px !important; 
+    }
+
+    .anuncios img {
+        width: 20%; 
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    .catalogo-container{
+        padding: 15px 1px;
+    }
+
+    .catalogo {
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 15px;
+    }
+
+    .catalogo a {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+
+    }
+    
+
+    .catalogo img {
+        width: 100%;
+    }
+
+
+}
