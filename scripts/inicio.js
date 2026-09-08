@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function cerrarSesion(event) {
-    if (event) event.preventDefault(); 
-    localStorage.removeItem('usuarioLogueado');
-    window.location.reload();
+    if (event) event.preventDefault(); // Evita que la página salte arriba
+    localStorage.removeItem('usuarioLogueado'); // Elimina la sesión activa
+    window.location.reload(); // Recarga la página para mostrar los botones de login/registro
 }
