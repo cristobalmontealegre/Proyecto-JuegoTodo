@@ -22,7 +22,7 @@ function registrarUsuario(event) {
     const nuevoUsuario = { usuario, email, password };
     usuariosGuardados.push(nuevoUsuario);
 
-    // Guardar usuarios y establecer la sesión activa
+    // Guardar usuarios y establecer lsesion acriva
     localStorage.setItem('usuarios', JSON.stringify(usuariosGuardados));
     localStorage.setItem('usuarioLogueado', JSON.stringify(nuevoUsuario));
 
