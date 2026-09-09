@@ -1,3 +1,4 @@
+/* estilo general*/
 body {
     background-color: #121212;
     color: #3afff8;
@@ -13,6 +14,7 @@ body {
     display: block;
 }
 
+/* header */
 header {
     display: flex;
     align-items: center;
@@ -45,6 +47,7 @@ header {
     text-align: center;
 }
 
+/* botoenes de usuarios */
 .usuario {
     flex: 1;
     display: flex;
@@ -53,6 +56,7 @@ header {
     gap: 10px;
 }
 
+/* Boton iniciar Sesion */
 .btn-sesion {
     background: transparent;
     color: #3afff8;
@@ -65,6 +69,7 @@ header {
     font-size: 14px;
 }
 
+/* Boton registrarse */
 .btn-registro {
     background-color: #3afff8;
     color: #000;
@@ -77,6 +82,7 @@ header {
     font-size: 14px;
 }
 
+/* Estilos para el estado con sesion iniciada */
 .nombre-usuario {
     color: #3afff8;
     font-size: 14px;
@@ -98,6 +104,7 @@ header {
     box-shadow: none !important;
 }
 
+/*titulo de seccion */
 .titulo-seccion {
     text-align: center;
     font-size: 1.2rem;
@@ -106,6 +113,7 @@ header {
     color: #3afff8;
 }
 
+/* anuncios */
 .anuncios {
     display: flex;
     border: 4px solid #3afff8;
@@ -132,7 +140,7 @@ header {
     object-fit: cover;
 }
 
-
+/* catalogo */
 .catalogo-container {
     border: 3px solid #3afff8;
     padding: 15px 10px;
@@ -156,7 +164,9 @@ header {
     width: 95%;   
 }
 
+/* vista en celular */
 @media (max-width: 768px) {
+    
     header {
         flex-direction: column;
         gap: 15px;
@@ -205,4 +215,3 @@ header {
         width: 100%;
     }
 }
-
