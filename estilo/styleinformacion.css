@@ -1,22 +1,26 @@
-
 body {
-    background-color: #121212; 
+    background-color: #121212;
     color: #3afff8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
-/*ENCABEZADO*/
+.logopag img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
 header {
-    display: flex   ;
+    display: flex;
     align-items: center;
-    border: 2px solid #3afff8   ;
+    border: 2px solid #3afff8;
     padding: 10px 20px;
     margin-bottom: 30px;
-    background-color: #1e1e1e00;
+    background-color: #0f0f0f00;
     border-radius: 10px;
-
 }
 
 .logo {
@@ -25,9 +29,9 @@ header {
 
 .logo h1 {
     margin: 0;
-    color: #3afff8  ;
+    color: #3afff8;
     text-transform: uppercase;
-    border: 2px solid #3afff8   ;
+    border: 2px solid #3afff8;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 10px;
@@ -45,7 +49,8 @@ header {
     flex: 1;
     display: flex;
     justify-content: flex-end; 
-    text-decoration: none;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-sesion {
@@ -56,6 +61,20 @@ header {
     cursor: pointer;
     text-decoration: none;
     border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-registro {
+    background-color: #3afff8;
+    color: #000;
+    border: 2px solid #3afff8;
+    padding: 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .titulo-seccion{
@@ -93,23 +112,6 @@ header {
 .info-caja h3 {
     color: #ffffff;
     font-size: 20px;
-}
-
-.info-caja ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.info-caja ul li {
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-}
-
-.info-caja ul li b {
-    color: #3afff8; 
 }
 
 @media (max-width: 768px) {

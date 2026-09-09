@@ -1,19 +1,25 @@
-
 body {
-    background-color: #121212; 
+    background-color: #121212;
     color: #3afff8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
+.logopag img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
 header {
-    display: flex   ;
+    display: flex;
     align-items: center;
     border: 2px solid #3afff8;
     padding: 10px 20px;
     margin-bottom: 30px;
-    background-color: #1e1e1e00;
+    background-color: #0f0f0f00;
     border-radius: 10px;
 }
 
@@ -23,13 +29,12 @@ header {
 
 .logo h1 {
     margin: 0;
-    color: #3afff8  ;
+    color: #3afff8;
     text-transform: uppercase;
-    border: 2px solid #3afff8   ;
+    border: 2px solid #3afff8;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 10px;
-
 }
 
 .navegacion a {
@@ -44,7 +49,8 @@ header {
     flex: 1;
     display: flex;
     justify-content: flex-end; 
-    text-decoration: none;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-sesion {
@@ -55,15 +61,25 @@ header {
     cursor: pointer;
     text-decoration: none;
     border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
 
-    
+.btn-registro {
+    background-color: #3afff8;
+    color: #000;
+    border: 2px solid #3afff8;
+    padding: 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
 }
 .titulo-seccion{
     text-align: center;
     font-size: 40px;
 }
-
-
 .contacto-caja {
     max-width: 500px;
     margin: 40px auto; 
@@ -112,7 +128,12 @@ header {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    
+    transition: 0.3s;
+}
+
+.contacto-caja button:hover {
+    background-color: #3afff8;
+    color: #121212;
 }
 
 @media (max-width: 768px) {
