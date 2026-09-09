@@ -1,3 +1,4 @@
+
 body {
     background-color: #121212; 
     color: #3afff8;
@@ -5,45 +6,123 @@ body {
     margin: 0;
     padding: 20px;
 }
-.titulo-basico {
-    text-align: center;
-    color: #3afff8;
-    margin-bottom: 40px; 
-    letter-spacing: 2px; 
+
+header {
+    display: flex   ;
+    align-items: center;
+    border: 2px solid #3afff8;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: #1e1e1e00;
+    border-radius: 10px;
 }
 
-.btn-volver {
-    background-color: transparent;
+.logo {
+    flex: 1;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #3afff8  ;
+    text-transform: uppercase;
+    border: 2px solid #3afff8   ;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
+.navegacion a {
+    color: #3afff8;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.usuario {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    text-decoration: none;
+}
+
+.btn-sesion {
+    background: transparent;
     color: #3afff8;
     border: 2px solid #3afff8;
     padding: 8px 15px;
-    text-decoration: none; 
-    border-radius: 5px;
-}
-
-.caja-login {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 15px; 
-    margin-top: 30px;
-}
-
-.input-basico {
-    padding: 10px;
-    width: 250px;
-    background-color: #222; 
-    color: #fff; 
-    border: 1px solid #3afff8; 
-    border-radius: 5px;
-}
-
-.btn-ingresar {
-    background-color: #3afff8;
-    color: #000;
-    padding: 10px 40px;
+    cursor: pointer;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 10px;
+
+    
+}
+.titulo-seccion{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.contacto-caja {
+    max-width: 500px;
+    margin: 40px auto; 
+    text-align: center;
+    padding: 0 20px; 
+}
+
+.contacto-caja h2 {
+    color: #3afff8;
+    margin-bottom: 10px;
+}
+
+.contacto-caja p {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contacto-caja form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.contacto-caja input,
+.contacto-caja textarea {
+    padding: 15px;
+    background-color: #1a1a1a; 
+    border: none; 
     border-radius: 5px;
-    margin-top: 10px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    resize: none;
+}
+
+.contacto-caja input:focus,
+.contacto-caja textarea:focus {
+    outline: 1px solid #3afff8; 
+}
+
+.contacto-caja button {
+    background-color: transparent;
+    color: #3afff8;
+    border: 1px solid #3afff8;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 768px) {
+    .info-caja {
+        padding: 25px 20px;
+    }
+    header {
+        flex-direction: column;
+        gap: 15px; 
+        padding: 15px;
+    }
+
 }
