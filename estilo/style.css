@@ -167,7 +167,7 @@ header {
 /* footer */
 .site-footer {
     background-color: #1a1a1a; 
-    border-top: 2px solid #00ffcc; 
+    border-top: 2px solid #3afff8; 
     padding: 40px 20px;
     margin-top: 60px; 
     color: #ffffff;
@@ -190,7 +190,7 @@ header {
 }
 
 .footer-col h3 {
-    color: #00ffcc;
+    color: #3afff8;
     font-size: 16px;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -209,7 +209,7 @@ header {
 }
 
 .footer-col a:hover {
-    color: #00ffcc; 
+    color: #3afff8; 
 }
 
 /* vista en celular */
