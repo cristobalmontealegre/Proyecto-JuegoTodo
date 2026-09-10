@@ -164,6 +164,54 @@ header {
     width: 95%;   
 }
 
+/* footer */
+.site-footer {
+    background-color: #1a1a1a; 
+    border-top: 2px solid #00ffcc; 
+    padding: 40px 20px;
+    margin-top: 60px; 
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px; 
+}
+
+.footer-col h3 {
+    color: #00ffcc;
+    font-size: 16px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #b3b3b3; 
+}
+
+.footer-col a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #00ffcc; 
+}
+
 /* vista en celular */
 @media (max-width: 768px) {
     
